@@ -1,15 +1,20 @@
 class Contact
 
-  def initialize(full_name)
-    @full_name = full_name
+  def initialize(name)
+    @name = name
   end
 
   def full_name
-    @full_name
+    @name
   end
 
-  def initialize(phone_number)
-    @phone_number = phone_number
+end
+
+
+class Number
+
+  def initialize(number)
+    @phone_number = number
   end
 
   def phone_number

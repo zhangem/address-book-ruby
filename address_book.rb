@@ -23,11 +23,14 @@ def add_contact
 
   @list << Contact.new(full_name)
   puts "Name added. \n\n"
+  main_menu
+end
 
-    puts "Enter phone number for contact."
+def phone_number
+  puts "Enter phone number for contact."
   phone_number = gets.chomp
 
-  @list << Contact.new(phone_number)
+  @list << Number.new(phone_number)
   puts "Phone number added. \n\n"
   main_menu
 end

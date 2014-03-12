@@ -3,7 +3,7 @@ require 'contact'
 
 describe Contact do
   it 'initializes the first and last name of a contact' do
-    test_contact = Contact.new('First Last')
+    test_contact = Contact.new('Name')
     test_contact.should be_an_instance_of Contact
   end
 
@@ -15,6 +15,11 @@ end
 
 describe Number do
   it 'initializes the phone number of a contact' do
+    test_number = Number.new('3606065760')
+    test_number.should be_an_instance_of Number
+  end
+
+  it 'passes through the phone number that is inputted' do
     test_number = Number.new('3606065760')
     test_number.phone_number.should eq '3606065760'
   end
